@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+let one =100;
+let two =10.1;
+let three =0xABCD123;
+let four =0b10101010;
+document.write(one+"<br>"+two+"<br>"+three+"<br>"+four+"<br>");
+
+let $five ="hellow";
+let six = $five;
+document.write("the refrance variable using $ simbol= &nbsp;", six);
+
+let seven = true;
+document.write("<br>"+seven+"<br>");
+
+let array_one= new Array(20,30,40);
+for(let i=0;i<array_one.length;i++)
+{
+	document.write(array_one[i]+"<br>");
+}
+let array_two=new Array({"e_id":111,"e_sal":10000,"e_name":"user1"},
+			{"e_id":222,"e_sal":20000,"e_name":"user2"})
+for(i=0;i<array_two.length;i++)
+{
+		//let s= array_two[i];
+		document.write(JSON.stringify(array_two[i]));
+		document.write("<br>")
+
+}
+
+</script>
+</head>
+</html>
