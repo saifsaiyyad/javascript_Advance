@@ -1,0 +1,19 @@
+<html>
+<script>
+let my_product=[
+{"p_id":111,"p_name":"user_one","p_sal":10000},
+{"p_id":222,"p_name":"user_two","p_sal":20000},
+{"p_id":333,"p_name":"user_three","p_sal":30000}
+];
+
+document.write("<table rules='all' border=1><thead><tr><th>P_id</th><th>p_name</th><th>p_sal</th></tr></thead><tbody>")
+
+
+for(let i=0;i<=my_product.length;i++)
+{
+	obj=my_product[i];
+	document.write("<tr><td>"+obj.p_id+"</td><td>"+obj.p_name+"</td><td>"+obj.p_sal+"</td></tr>");
+}
+document.write("</tbody></table>");
+</script>
+</html>
